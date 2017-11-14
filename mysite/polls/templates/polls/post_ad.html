@@ -1,0 +1,19 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+
+<form method="POST">{% csrf_token %}
+    <div class="fieldWrapper">
+        <label for="id_name" name="budget">Enter Budget Boss</label>
+        {{ form.name }}
+        <label for="id_name">Location</label>
+        {{ form.location }}
+        <label for="id_name">Departure Date </label>
+        {{ form.outbound }}
+        <label for="id_name">Arrival Date</label>
+        {{ form.inbound }}
+        <button type="submit">
+        <i class="fa fa-thumb-tack"></i> Find My Dream Holiday
+        </button>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+li a {
+    color: green;
+}
+
+body {
+    background: white url("images/doritos.jpeg") no-repeat bottom;
+}
+
+html, body { min-height: 100%; }
+
+div {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid+span:after {
+  position: absolute; content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  position: absolute;
+  content: '✓';
+  padding-left: 5px;
+}

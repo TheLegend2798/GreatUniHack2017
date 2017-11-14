@@ -1,0 +1,10 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+
+<h1>SurpriseScanner</h1>
+<h1>This is where results go</h1>
+{% csrf_token %}
+{% for a in post %}
+<h3>{{ a }}</h3>
+{% endfor %}
